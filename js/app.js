@@ -10,6 +10,7 @@
   const enqueueController = document.querySelector('#enqueue');
   const dequeueController = document.querySelector('#dequeue');
 
+  input.form.addEventListener('submit', enqueueHandler);
   enqueueController.addEventListener('click', enqueueHandler);
   dequeueController.addEventListener('click', dequeueHandler);
 
