@@ -14,7 +14,10 @@
   enqueueController.addEventListener('click', enqueueHandler);
   dequeueController.addEventListener('click', dequeueHandler);
 
-  function enqueueHandler() {
+  function enqueueHandler(event) {
+    if(event.type === 'submit') {
+      event.preventDefault();
+    }
     if(validateInput(input.value) && queue.length < LIMIT) {
       enqueueItem(input.value);
       saveQueueState();
