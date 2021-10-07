@@ -1,0 +1,96 @@
+:root {
+  --first-item-color: #3aff4a;
+  --button-text: #fff;
+  --main-color: #ff3a4a;
+  --main-hover-color: #ff3a4acb;
+  --secondary-color: #979797;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding: 2rem;
+}
+
+.wrapper-title {
+  width: 30%;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.queue {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-top: 1px dashed var(--secondary-color);
+  border-bottom: 1px dashed var(--secondary-color);
+}
+
+.queue-item {
+  padding: .25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--main-color);
+  margin: 0 .5rem;
+  text-align: center;
+}
+
+.first {
+  border: 1px solid var(--first-item-color);
+}
+
+.inputs-container {
+  width: 40%;
+  margin: .5rem auto;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.label {
+  padding-bottom: .5rem;
+  color: #5f5f5f;
+}
+
+.input {
+  padding: .25rem;
+}
+
+.controllers-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.controller {
+  font-size: 1.4rem;
+  color: #fff;
+  width: 200px;
+  padding: 1rem;
+  background-color: var(--main-color);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.controller:hover {
+  background-color: var(--main-hover-color);
+  cursor: pointer;
+}
