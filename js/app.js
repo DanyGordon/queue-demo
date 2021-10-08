@@ -23,7 +23,7 @@
       if(!validateInput(input.value)) {
         alert('Please input some value before enqueue');
       } else if(queue.length === LIMIT) {
-        alert('Queue can\'t be longer than 20 items');
+        alert(`Queue can\'t be longer than ${LIMIT} items`);
       }
     }
     input.value = '';
